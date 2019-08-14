@@ -1,12 +1,13 @@
-
 (function () {
   console.log('ready');
-  var ticket_id = '112151'
+  var ticket_id = location.search.split('?ticket_id=')[1];
+  if(ticket_id == undefined || ticket_id == ''){
+    alert('please input ticket_id')
+  }else{
   fetch(`/api/kpi-campaign/${ticket_id}`)
   .then(data => {
     return data.json();
   }).then(json=>{
-    console.log(json);
     $('#complain_desc').text(json.complain_desc)
     $('#reference_id').text(json.reference_id)
     $('#firstname').text(json.firstname)
@@ -26,5 +27,8 @@
     $('#result_by').text(json.result_by)
     $('#result_date').text(json.result_date)
   })
+}
 })()
+
+
 
