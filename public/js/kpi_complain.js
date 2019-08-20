@@ -13,6 +13,9 @@
     $('#firstname').text(json.firstname)
     $('#lastname').text(json.lastname)
     $('#reason_1').text(json.reason_1)
+    if(json.reason_2){
+      $('.reason_2').removeClass('d-none');
+    }
     $('#reason_2').text(json.reason_2)
     $('#remarks').text(json.remarks)
     $('#create_by').text(json.create_by)
@@ -26,6 +29,8 @@
     $('#result_sumerize').text(json.result_sumerize)
     $('#result_by').text(json.result_by)
     $('#result_date').text(json.result_date)
+  }).catch(err=>{
+    console.log("not found 404");
   })
 }
 })()

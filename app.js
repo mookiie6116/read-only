@@ -17,8 +17,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/page/index.html');
 });
-app.get('/kpi-campaign', function (req, res) {
-  res.sendFile(__dirname + '/public/page/kpi_campaign.html');
+app.get('/kpi-complain', function (req, res) {
+  res.sendFile(__dirname + '/public/page/kpi_complain.html');
+});
+app.get('/kpi-claim', function (req, res) {
+  res.sendFile(__dirname + '/public/page/kpi_claim.html');
+});
+app.get('/kpi-cancel', function (req, res) {
+  res.sendFile(__dirname + '/public/page/kpi_cancel.html');
+});
+app.get('/kpi-conserv', function (req, res) {
+  res.sendFile(__dirname + '/public/page/kpi_conserv.html');
+});
+app.get('/kpi-problem', function (req, res) {
+  res.sendFile(__dirname + '/public/page/kpi_problem.html');
 });
 
 app.use('/api', require('./api/api.js'));

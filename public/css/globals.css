@@ -1,0 +1,21 @@
+.padding-right-0 {
+  padding-right: 0;
+}
+
+.padding-left-0 {
+  padding-left: 0;
+}
+.padding-left-5 {
+  padding-left: 5px;
+}
+
+.padding-left-35 {
+  padding-left: 35px
+}
+
+.margin-b-0{
+  margin-bottom: 0;
+}
+.custom-control-input:disabled~.custom-control-label {
+  color: black;
+}
