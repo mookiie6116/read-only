@@ -29,8 +29,8 @@ app.get('/kpi-cancel', function (req, res) {
 app.get('/kpi-conserv', function (req, res) {
   res.sendFile(__dirname + '/public/page/kpi_conserv.html');
 });
-app.get('/kpi-problem', function (req, res) {
-  res.sendFile(__dirname + '/public/page/kpi_problem.html');
+app.get('/kpi-followup', function (req, res) {
+  res.sendFile(__dirname + '/public/page/kpi_followup.html');
 });
 
 app.use('/api', require('./api/api.js'));

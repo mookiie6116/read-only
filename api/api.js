@@ -7,7 +7,7 @@ router.use(require('./kpi_campaign'));
 router.use(require('./kpi_claim'));
 router.use(require('./kpi_cancel'));
 router.use(require('./kpi_conserv'));
-router.use(require('./kpi_problem'));
+router.use(require('./kpi_followup'));
 
 
 

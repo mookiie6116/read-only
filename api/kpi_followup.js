@@ -2,9 +2,9 @@ var express = require("express");
 var router = express.Router();
 var db = require("./../models/connectdb");
 
-router.get("/kpi-problem/:ticket_id",function(req, res) {
+router.get("/kpi-followup/:ticket_id",function(req, res) {
   let ticket_id = req.params.ticket_id
-  let sql = `select * from vw_kpi_conserv where ticket_id = '${ticket_id}';`;
+  let sql = `select * from vw_kpi_followup where ticket_id = '${ticket_id}';`;
   db.query(sql, function(response) {
     if (response.length > 0) {
       res

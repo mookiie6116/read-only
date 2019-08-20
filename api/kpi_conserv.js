@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var db = require("./../models/connectdb");
+var db = require("../models/connectdb");
 
 router.get("/kpi-conserv/:ticket_id",function(req, res) {
   let ticket_id = req.params.ticket_id
