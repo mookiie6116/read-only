@@ -19,3 +19,12 @@
 .custom-control-input:disabled~.custom-control-label {
   color: black;
 }
+.line-end{
+  border-bottom: #ccc solid 0.5px;
+  margin: 15px 0;
+}
+.ow {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}

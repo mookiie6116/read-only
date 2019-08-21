@@ -32,7 +32,9 @@ app.get('/kpi-conserv', function (req, res) {
 app.get('/kpi-followup', function (req, res) {
   res.sendFile(__dirname + '/public/page/kpi_followup.html');
 });
-
+app.get('/kpi-change', function (req, res) {
+  res.sendFile(__dirname + '/public/page/kpi_change.html');
+});
 app.use('/api', require('./api/api.js'));
 
 http.listen(port, () => {
