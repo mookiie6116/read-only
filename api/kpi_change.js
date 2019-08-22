@@ -30,4 +30,18 @@ router.get("/kpi-change/:ticket_id/beneficiary",function(req, res) {
   })
 })
 
+router.get("/kpi-change/:ticket_id/question",function(req, res) {
+  let ticket_id = req.params.ticket_id
+  let sql = `select * from vw_kpi_change_question where ticket_id = '${ticket_id}';`;
+  db.query(sql, function(response) {
+    if (response.length > 0) {
+      res
+      .status(200)
+      .json(response[0]);
+    }else{
+      res.status(404).send(`not found ticket id = ${ticket_id}` );
+    }
+  })
+})
+
 module.exports = router;

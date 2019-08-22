@@ -38,9 +38,9 @@
         </div>
       </div>
       <div class="row">
-          <div class="col-sm-5 padding-right-0"><label for="ticket_id">ประเภทผู้ถือกรมธรรม์ :</label>
-          </div>
-          <div class="col-sm-7 padding-left-0"><label class="padding-left-35" id="ticket_id"></label></div>
+        <div class="col-sm-5 padding-right-0"><label for="ticket_id">ประเภทผู้ถือกรมธรรม์ :</label>
+        </div>
+        <div class="col-sm-7 padding-left-0"><label class="padding-left-35" id="ticket_id"></label></div>
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-6">
@@ -224,20 +224,20 @@
         <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
           <label for="bus_phone_2">โทรศัพท์ทีทำงาน (เบอร์รอง) :</label></div>
         <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
-            <label class="padding-left-35" id="bus_phone_2"></label>
-            <label class="padding-left-35"> - </label>
-            <label class="padding-left-35" id="bus_collage_line_2"></label>
-            <label class="padding-left-35"> ต่อ </label>
-            <label class="padding-left-35" id="bus_ext_2"></label>  
+          <label class="padding-left-35" id="bus_phone_2"></label>
+          <label class="padding-left-35"> - </label>
+          <label class="padding-left-35" id="bus_collage_line_2"></label>
+          <label class="padding-left-35"> ต่อ </label>
+          <label class="padding-left-35" id="bus_ext_2"></label>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
           <label for="fax_phone">โทรสาร :</label></div>
         <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
-            <label class="padding-left-35" id="fax_number"></label>
-            <label class="padding-left-35"> ต่อ </label>
-            <label class="padding-left-35" id="fax_ext"></label>  
+          <label class="padding-left-35" id="fax_number"></label>
+          <label class="padding-left-35"> ต่อ </label>
+          <label class="padding-left-35" id="fax_ext"></label>
         </div>
       </div>
       <div class="row">
@@ -413,47 +413,215 @@
       คำถามคำตอบสุขภาพ
     </div>
     <div class="card-body">
-      <div class="Q1">
-        1.ท่านมีหรือได้ขอเอาประกันภัยสุขภาพ ประกันอุบัติเหตุ ประกันชีวิต หรือ
-        ประกันที่มีความคุ้มครองการว่างงานไว้กับบริษัทประกันภัยอื่น หรือบริษัทกรุงไทยพานิชประกันภัยหรือไม่ ?
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-5 text-sm-left text-md-right padding-left-35 custom-control custom-checkbox"">
-            <input class=" custom-control-input" type="checkbox" id="conserv_tool_choice_2" disabled="">
-          <label class="custom-control-label" for="conserv_tool_choice_2"> เคย/มี </label>
+      <div class="Q1 d-none">
+        <div class="row">
+          <label id="question1"></label>
         </div>
-        <div class="col-ml-3 col-sm-11 col-md-7 text-left padding-left-35 custom-control custom-checkbox"">
-            <input class=" custom-control-input" type="checkbox" id="conserv_tool_choice_2" disabled="">
-          <label class="custom-control-label" for="conserv_tool_choice_2"> ไม่เคย/ไม่มี </label>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer1_true" disabled="">
+            <label class="custom-control-label" for="answer1_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer1_false" disabled="">
+            <label class="custom-control-label" for="answer1_false"> ไม่เคย/ไม่มี </label>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
-          <label for="claim_date">ระบุ :</label></div>
-        <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
-          <label class="padding-left-35" id="claim_date"></label></div>
-      </div>
-      <div class="Q2">
-        2.ท่านกำลังป่วนเป็น หรือเคยเป็น หรือมีอาการรับรู้ได้ด้วยตนเอง หรือเคยได้รับการตรวจรักษา
-        หรือบอกกล่าว หรือคำแนะนำจากแพทย์เกี่ยวกับโรคลมชัก โรคหัวใจ โรคภาวะหายใจอุดกั้น โรคความดันโลหิตสูง โรคเบาหวาน
-        โรคมะเร็งทุกชนิด โรคเอดส์หรือมีเชื่อไวรัส HIV โรค SLE/DLE หรือมีความผิดปกติที่ร้ายแรงทางร่างกายหรือจิตใจหรือไม่
-        ?
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-5 text-sm-left text-md-right padding-left-35 custom-control custom-checkbox"">
-            <input class=" custom-control-input" type="checkbox" id="conserv_tool_choice_2" disabled="">
-          <label class="custom-control-label" for="conserv_tool_choice_2"> เคย/มี </label>
-        </div>
-        <div class="col-ml-3 col-sm-11 col-md-7 text-left padding-left-35 custom-control custom-checkbox"">
-            <input class=" custom-control-input" type="checkbox" id="conserv_tool_choice_2" disabled="">
-          <label class="custom-control-label" for="conserv_tool_choice_2"> ไม่เคย/ไม่มี </label>
+        <div class="row">
+          <div class="col-sm-12 col-md-1 padding-right-0 text-sm-left text-md-right">
+            <label for="answer1_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-11 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer1_comment"></label></div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
-          <label for="claim_date">ระบุ :</label></div>
-        <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
-          <label class="padding-left-35" id="claim_date"></label></div>
+      <div class="Q2 d-none">
+        <div class="row">
+          <label id="question2"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer2_true" disabled="">
+            <label class="custom-control-label" for="answer2_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer2_false" disabled="">
+            <label class="custom-control-label" for="answer2_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer2_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer2_comment"></label></div>
+        </div>
+      </div>
+      <div class="Q3 d-none">
+        <div class="row">
+          <label id="question3"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer3_true" disabled="">
+            <label class="custom-control-label" for="answer3_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer3_false" disabled="">
+            <label class="custom-control-label" for="answer3_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer3_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer3_comment"></label></div>
+        </div>
+      </div>
+      <div class="Q4 d-none">
+        <div class="row">
+          <label id="question4"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer4_true" disabled="">
+            <label class="custom-control-label" for="answer4_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer4_false" disabled="">
+            <label class="custom-control-label" for="answer4_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer4_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer4_comment"></label></div>
+        </div>
+      </div>
+      <div class="Q5 d-none">
+        <div class="row">
+          <label id="question5"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer5_true" disabled="">
+            <label class="custom-control-label" for="answer5_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer5_false" disabled="">
+            <label class="custom-control-label" for="answer5_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer5_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer5_comment"></label></div>
+        </div>
+      </div>
+      <div class="Q6 d-none">
+        <div class="row">
+          <label id="question6"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer6_true" disabled="">
+            <label class="custom-control-label" for="answer6_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer6_false" disabled="">
+            <label class="custom-control-label" for="answer6_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer6_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer6_comment"></label></div>
+        </div>
+      </div>
+      <div class="Q7 d-none">
+        <div class="row">
+          <label id="question7"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer7_true" disabled="">
+            <label class="custom-control-label" for="answer7_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer7_false" disabled="">
+            <label class="custom-control-label" for="answer7_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer7_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer7_comment"></label></div>
+        </div>
+      </div>
+      <div class="Q8 d-none">
+        <div class="row">
+          <label id="question8"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer8_true" disabled="">
+            <label class="custom-control-label" for="answer8_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer8_false" disabled="">
+            <label class="custom-control-label" for="answer8_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer1_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer8_comment"></label></div>
+        </div>
+      </div>
+      <div class="Q9 d-none">
+        <div class="row">
+          <label id="question9"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer9_true" disabled="">
+            <label class="custom-control-label" for="answer9_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer9_false" disabled="">
+            <label class="custom-control-label" for="answer9_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer1_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer9_comment"></label></div>
+        </div>
+      </div>
+      <div class="Q10 d-none">
+        <div class="row">
+          <label id="question10"></label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer10_true" disabled="">
+            <label class="custom-control-label" for="answer10_true"> เคย/มี </label>
+          </div>
+          <div class="col-sm-12 padding-left-35 custom-control custom-checkbox">
+                <input class=" custom-control-input" type="checkbox" id="answer10_false" disabled="">
+            <label class="custom-control-label" for="answer10_false"> ไม่เคย/ไม่มี </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 padding-right-0 text-sm-left text-md-right">
+            <label for="answer10_comment">ระบุ :</label></div>
+          <div class="col-ml-3 col-sm-11 col-md-7 padding-left-0 text-left">
+            <label class="padding-left-35" id="answer10_comment"></label></div>
+        </div>
       </div>
     </div>
   </div>
