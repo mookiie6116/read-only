@@ -80,6 +80,9 @@
         $('#other_life_insure').text(json.other_life_insure)
         $('#budget').text(json.budget)
 
+      }).catch(err=>{
+        console.log("not found 404");
+        window.location = '/404'
       })
 
   }
@@ -90,85 +93,79 @@ function beneficiary(data) {
   var beneficiary = ""
   beneficiary += "<div class='row'>"
 
-  beneficiary += "<div class='col-sm-12 col-md-6'>"
-
-  beneficiary += "<div class='row'>"
+  beneficiary += "<div class='row col-sm-12 col-md-6'>"
   beneficiary += "<div class='col-sm-5 padding-right-0'>"
   beneficiary += "<label for='bn_order'>ลำดับที่ :</label>"
   beneficiary += "</div>"
   beneficiary += "<div class='col-sm-7 padding-left-0'>"
-  beneficiary += "<label class='padding-left-5' id='bn_order'>" + data.bn_order + "</label>"
+  beneficiary += "<label class='padding-left-35' id='bn_order'>" + data.bn_order + "</label>"
   beneficiary += "</div>"
   beneficiary += "</div>"
 
-  beneficiary += "<div class='row'>"
-  beneficiary += "<div class='col-sm-5 padding-right-0'>"
-  beneficiary += "<label for='ticket_id'>ชื่อ :</label>"
-  beneficiary += "</div>"
-  beneficiary += "<div class='col-sm-7 padding-left-0'>"
-  beneficiary += "<label class='padding-left-5' id='ticket_id'>" + data.bn_first_name + "</label>"
-  beneficiary += "</div>"
-  beneficiary += "</div>"
-
-  beneficiary += "<div class='row'>"
-  beneficiary += "<div class='col-sm-5 padding-right-0'>"
-  beneficiary += "<label for='ticket_id'>เพศ :</label>"
-  beneficiary += "</div>"
-  beneficiary += "<div class='col-sm-7 padding-left-0'>"
-  beneficiary += "<label class='padding-left-5' id='ticket_id'>" + data.bn_sex + "</label>"
-  beneficiary += "</div>"
-  beneficiary += "</div>"
-
-  beneficiary += "<div class='row'>"
-  beneficiary += "<div class='col-sm-5 padding-right-0'>"
-  beneficiary += "<label for='ticket_id'>วันเดือนปี เกิด(พ.ศ.) :</label>"
-  beneficiary += "</div>"
-  beneficiary += "<div class='col-sm-7 padding-left-0'>"
-  beneficiary += "<label class='padding-left-5' id='ticket_id'>" + data.bn_dob + "</label>"
-  beneficiary += "</div>"
-  beneficiary += "</div>"
-
-  beneficiary += "</div>"
-
-  beneficiary += "<div class='col-sm-12 col-md-6'>"
-
-  beneficiary += "<div class='row'>"
+  beneficiary += "<div class='row col-sm-12 col-md-6 row'>"
   beneficiary += "<div class='col-sm-5 padding-right-0'>"
   beneficiary += "<label for='ticket_id'>เลขที่บัตรประชาชน :</label>"
   beneficiary += "</div>"
   beneficiary += "<div class='col-sm-7 padding-left-0'>"
-  beneficiary += "<label class='padding-left-5' id='ticket_id'>" + data.bn_ssn + "</label>"
+  beneficiary += "<label class='padding-left-35' id='ticket_id'>" + data.bn_ssn + "</label>"
   beneficiary += "</div>"
   beneficiary += "</div>"
 
-  beneficiary += "<div class='row'>"
+  beneficiary += "<div class='row col-sm-12 col-md-6'>"
+  beneficiary += "<div class='col-sm-5 padding-right-0'>"
+  beneficiary += "<label for='ticket_id'>ชื่อ :</label>"
+  beneficiary += "</div>"
+  beneficiary += "<div class='col-sm-7 padding-left-0'>"
+  beneficiary += "<label class='padding-left-35' id='ticket_id'>" + data.bn_first_name + "</label>"
+  beneficiary += "</div>"
+  beneficiary += "</div>"
+
+  beneficiary += "<div class='row col-sm-12 col-md-6'>"
   beneficiary += "<div class='col-sm-5 padding-right-0'>"
   beneficiary += "<label for='ticket_id'>นามสกุล :</label>"
   beneficiary += "</div>"
   beneficiary += "<div class='col-sm-7 padding-left-0'>"
-  beneficiary += "<label class='padding-left-5' id='ticket_id'>" + data.bn_last_name + "</label>"
+  beneficiary += "<label class='padding-left-35' id='ticket_id'>" + data.bn_last_name + "</label>"
   beneficiary += "</div>"
   beneficiary += "</div>"
 
-  beneficiary += "<div class='row'>"
+  beneficiary += "<div class='row col-sm-12 col-md-6'>"
+  beneficiary += "<div class='col-sm-5 padding-right-0'>"
+  beneficiary += "<label for='ticket_id'>เพศ :</label>"
+  beneficiary += "</div>"
+  beneficiary += "<div class='col-sm-7 padding-left-0'>"
+  beneficiary += "<label class='padding-left-35' id='ticket_id'>" + data.bn_sex + "</label>"
+  beneficiary += "</div>"
+  beneficiary += "</div>"
+
+  beneficiary += "<div class='row col-sm-12 col-md-6'>"
   beneficiary += "<div class='col-sm-5 padding-right-0'>"
   beneficiary += "<label for='ticket_id'>ความสัมพันธ์ :</label>"
   beneficiary += "</div>"
   beneficiary += "<div class='col-sm-7 padding-left-0'>"
-  beneficiary += "<label class='padding-left-5' id='ticket_id'>" + data.bn_rel + "</label>"
+  beneficiary += "<label class='padding-left-35' id='ticket_id'>" + data.bn_rel + "</label>"
   beneficiary += "</div>"
   beneficiary += "</div>"
 
-  beneficiary += "<div class='row'>"
+  beneficiary += "<div class='row col-sm-12 col-md-6'>"
+  beneficiary += "<div class='col-sm-5 padding-right-0'>"
+  beneficiary += "<label for='ticket_id'>วันเดือนปี เกิด(พ.ศ.) :</label>"
+  beneficiary += "</div>"
+  beneficiary += "<div class='col-sm-7 padding-left-0'>"
+  beneficiary += "<label class='padding-left-35' id='ticket_id'>" + data.bn_dob + "</label>"
+  beneficiary += "</div>"
+  beneficiary += "</div>"
+
+  beneficiary += "<div class='row col-sm-12 col-md-6'>"
   beneficiary += "<div class='col-sm-5 padding-right-0'>"
   beneficiary += "<label for='ticket_id'>สัดส่วน :</label>"
   beneficiary += "</div>"
   beneficiary += "<div class='col-sm-7 padding-left-0'>"
-  beneficiary += "<label class='padding-left-5' id='ticket_id'>" + data.bn_pct + "</label>"
+  beneficiary += "<label class='padding-left-35' id='ticket_id'>" + data.bn_pct + "</label>"
   beneficiary += "</div>"
   beneficiary += "</div>"
 
-  beneficiary += "</div>"
+  // beneficiary += "</div>"
   beneficiary += "<div class='col-sm-12 line-end'></div>"
   beneficiary += "</div>"
   return beneficiary;

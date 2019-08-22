@@ -17,6 +17,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/page/index.html');
 });
+app.get('/404', function (req, res) {
+  res.sendFile(__dirname + '/public/page/not_found.html');
+});
 app.get('/kpi-complain', function (req, res) {
   res.sendFile(__dirname + '/public/page/kpi_complain.html');
 });

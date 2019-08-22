@@ -62,6 +62,7 @@
         $('#finance_comment').text(json.finance_comment)
       }).catch(err=>{
         console.log("not found 404");
+        window.location = '/404'
       })
   }
 })();

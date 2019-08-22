@@ -37,6 +37,7 @@
 
       }).catch(err=>{
         console.log("not found 404");
+        window.location = '/404'
       })
   }
 })();
