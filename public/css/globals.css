@@ -9,8 +9,17 @@
   padding-left: 5px;
 }
 
+.padding-left-28 {
+  padding-left: 28px
+}
+.padding-left-30 {
+  padding-left: 30px
+}
 .padding-left-35 {
   padding-left: 35px
+}
+.padding-top-20{
+  padding-top: 20px
 }
 
 .margin-b-0{
@@ -22,6 +31,13 @@
 .line-end{
   border-bottom: #ccc solid 0.5px;
   margin: 15px 0;
+}
+.card-header{
+  font-weight: 700;
+  padding-left: 10rem;
+}
+.card-body{
+  padding: 1.25rem 10rem;
 }
 .wrap {
   overflow-wrap: break-word;

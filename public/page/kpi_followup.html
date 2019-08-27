@@ -14,173 +14,204 @@
 
 <body>
   <div class="card">
-    <div class="card-header text-center">
+    <div class="card-header text-center" style="padding: .75rem 1.25rem">
       รายละเอียด
     </div>
     <div class="card-body">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="ticket_id">เลขที่ปัญหา :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="ticket_id"></label></div>
+      <div class="row col-md-11 offset-md-1 padding-left-0">
+        <div class='row col-sm-12 col-md-6'>
+          <div class="col-sm-5 padding-right-0"><label class="font-weight-bold" for="ticket_id">เลขที่ปัญหา </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="add_name">ชื่อผู้รับปัญหา :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="add_name"></label></div>
+          <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="ticket_id"></label></div>
+        </div>
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0"><label class="font-weight-bold" for="open_time">วันที่เปิดรับ </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="owner_name">ชื่อเจ้าของปัญหา :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="owner_name"></label></div>
+          <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="open_time"></label></div>
+        </div>
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0"><label class="font-weight-bold" for="add_name">ชื่อผู้รับปัญหา </label>
+          </div>
+          <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="add_name"></label></div>
+        </div>
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="close_time">วันที่ปิด </label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="close_time"></label>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="open_time">วันที่เปิดรับ :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="open_time"></label></div>
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="owner_name">ชื่อเจ้าของปัญหา </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="close_time">วันที่ปิด :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="close_time"></label></div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="owner_name"></label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="ticket_status">สถานะ :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="ticket_status"></label></div>
+        </div>
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="ticket_status">สถานะ </label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="ticket_status"></label>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="customer_id">รหัสลูกค้า :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="customer_id"></label></div>
+      <div class="row col-md-11 offset-md-1 padding-left-0">
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="customer_id">รหัสลูกค้า </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="caller_name">ข้อมูลผู้ติดต่อ :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="caller_name"></label></div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="customer_id"></label></div>
+        </div>
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="customer_name">ชื่อลูกค้า </label>
           </div>
-          <div class="row">
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="customer_name"></label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="system">ระบบงานหลัก :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="system"></label></div>
+        </div>
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="caller_name">ข้อมูลผู้ติดต่อ </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="subsystem">ระบบงานย่อย :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="subsystem"></label></div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="caller_name"></label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="module">หัวข้อหลัก :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="module"></label></div>
+        </div>
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="caller_phoneno">โทรศัพท์ </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="item">หัวข้อย่อย :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="item"></label></div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="caller_phoneno"></label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="problem_type">ปัญหา :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="problem_type"></label></div>
+        </div>
+      </div>
+      <div class="row col-md-11 offset-md-1 padding-left-0">
+        <div class="row col-sm-12 col-md-6">
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="system">ระบบงานหลัก </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="subproblem_type">ปัญหาย่อย :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="subproblem_type"></label></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0 padding-left-35 custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="mass_problem" disabled="">
-              <label class="custom-control-label" for="mass_problem">mass problem</label>
-            </div>
-            <div class="col-sm-7 padding-left-0 ">
-              <label for="conserv_tool_choice_1">
-                ติดตามปัญหาครั้งที่
-                <label class="padding-left-5" id="call_times">0</label>
-              </label>
-            </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="system"></label>
           </div>
 
-        </div>
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="subsystem">ระบบงานย่อย </label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="subsystem"></label>
+          </div>
 
-        <div class="col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="customer_name">ชื่อลูกค้า :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="customer_name"></label></div>
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="module">หัวข้อหลัก </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="caller_phoneno">โทรศัพท์ :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="caller_phoneno"></label></div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="module"></label>
           </div>
-          <div class="row">
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="item">หัวข้อย่อย </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="channel">รับเรื่องทาง :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="channel"></label></div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="item"></label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="province">จังหวัด :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="province"></label></div>
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="problem_type">ปัญหา </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="severity_level">ความรุนแรง :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="severity_level"></label></div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="problem_type"></label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="priority_level">ความสำคัญ :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="priority_level"></label></div>
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="subproblem_type">ปัญหาย่อย </label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="need_day">กำหนด (ว:ช:น) :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0">
-              <label class="padding-left-5" id="need_day"></label> /
-              <label class="padding-left-5" id="need_hr"></label> /
-              <label class="padding-left-5" id="need_mi"></label>
-            </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="subproblem_type"></label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="reminder_time">วันที่ครบกำหนด :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="reminder_time"></label></div>
+
+          <div class="col-sm-5 padding-right-0 padding-left-30 custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="mass_problem" disabled="">
+            <label class="custom-control-label font-weight-bold" for="mass_problem">mass problem</label>
           </div>
-          <div class="row">
-            <div class="col-sm-5 padding-right-0"><label for="close_date">วันที่ติดตามปัญหา :</label>
-            </div>
-            <div class="col-sm-7 padding-left-0"><label id="close_date"></label></div>
+          <div class="col-sm-7 padding-left-0 ">
+            <label class="padding-left-5 font-weight-bold" for="conserv_tool_choice_1">
+              ติดตามปัญหาครั้งที่
+            </label>
+            <label class="padding-left-5" id="call_times">0</label>
+          </div>
+        </div>
+        <div class="row col-sm-12 col-md-6">
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" class="font-weight-bold" for="channel">รับเรื่องทาง </label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="channel"></label>
+          </div>
+
+          <div class="col-sm-5 padding-right-0"><label class="font-weight-bold" for="province">จังหวัด </label>
+          </div>
+          <div class="col-sm-7 padding-left-0"><label class="padding-left-5" id="province"></label></div>
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="severity_level">ความรุนแรง</label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="severity_level"></label>
+          </div>
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="priority_level">ความสำคัญ</label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="priority_level"></label>
+          </div>
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="need_day">กำหนด (ว:ช:น)</label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="need_day"></label> /
+            <label class="padding-left-5" id="need_hr"></label> /
+            <label class="padding-left-5" id="need_mi"></label>
+          </div>
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="reminder_time">วันที่ครบกำหนด</label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label class="padding-left-5" id="reminder_time"></label>
+          </div>
+
+          <div class="col-sm-5 padding-right-0">
+            <label class="font-weight-bold" for="close_date">วันที่ติดตามปัญหา</label>
+          </div>
+          <div class="col-sm-7 padding-left-0">
+            <label id="close_date"></label>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-2 padding-right-0"><label for="problem_detail">รายละเอียดปัญหา :</label>
-        </div>
-        <div class="ml-sm-3 ml-md-0 col-sm-11 col-md-10 padding-left-0">
-          <label class="padding-left-5" id="problem_detail"></label></div>
+      <div class="row col-md-11 offset-md-1 padding-left-0">
+          <div class="col-sm-2 padding-right-0"><label class="font-weight-bold" for="problem_detail">รายละเอียดปัญหา </label>
+          </div>
+          <div class="col-sm-10 padding-left-28"><label id="problem_detail"></label></div>
       </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-2 padding-right-0"><label for="resolved_detaill">วิธีการแก้ไขปัญหา :</label>
-        </div>
-        <div class="ml-sm-3 ml-md-0 col-sm-11 col-md-10 padding-left-0">
-          <label class="padding-left-5" id="resolved_detaill"></label></div>
+      <div class="row col-md-11 offset-md-1 padding-left-0">
+          <div class="col-sm-2 padding-right-0"><label class="font-weight-bold" for="resolved_detaill">วิธีการแก้ไขปัญหา </label>
+          </div>
+          <div class="col-sm-10 padding-left-28"><label id="resolved_detaill"></label></div>
       </div>
+
     </div>
   </div>
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
