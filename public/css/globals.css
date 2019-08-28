@@ -1,3 +1,23 @@
+html {
+  font-size: 14px !important;
+  font-family: "Arial", "digital", "Saldina"  !important;
+}
+
+body{
+  color: #4a4a4a;
+}
+
+@font-face {
+    font-family: digital;
+    src: url(../fonts/digital-7.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: AmulhedDemo;
+    src: url(../fonts/AmulhedDemo.ttf.woff) format('woff');
+    font-weight: 400;
+}
 .padding-right-0 {
   padding-right: 0;
 }
@@ -34,10 +54,10 @@
 }
 .card-header{
   font-weight: 700;
-  padding-left: 10rem;
+  padding-left: 5rem;
 }
 .card-body{
-  padding: 1.25rem 10rem;
+  padding: 1.25rem 5rem;
 }
 .wrap {
   overflow-wrap: break-word;
