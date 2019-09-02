@@ -6,6 +6,8 @@ router.get("/kpi-conserv/:ticket_id",function(req, res) {
   let ticket_id = req.params.ticket_id
   let sql = `select * from vw_kpi_conserv where ticket_id = '${ticket_id}';`;
   db.query(sql, function(response) {
+    console.log(response);
+    
     if (response.length > 0) {
       res
       .status(200)

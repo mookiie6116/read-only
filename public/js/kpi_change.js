@@ -7,10 +7,10 @@
   } else {
     fetch(`/api/kpi-change/${ticket_id}`)
       .then(data => {
-        var tb = 164246;
-        beneficiary(tb)
+        beneficiary(ticket_id)
         return data.json();
       }).then(json => {
+       
         $('#title').text(json.title)
         $('#first_name').text(json.first_name)
         $('#last_name').text(json.last_name)
@@ -84,8 +84,7 @@
 function beneficiary(ticket_id) {
   fetch(`/api/kpi-change/${ticket_id}/beneficiary`)
     .then(data => {
-      var tb = 159131;
-      question(tb)
+      question(ticket_id)
       return data.json();
     }).then(json => {
       json.map(data => {
@@ -178,6 +177,7 @@ function beneficiarylist(data) {
 function question(ticket_id) {
   fetch(`/api/kpi-change/${ticket_id}/question`)
     .then(data => {
+      dataTicketFollowUp(ticket_id);
       return data.json();
     }).then(json => {
       console.log(json);

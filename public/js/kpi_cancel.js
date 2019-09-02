@@ -6,6 +6,7 @@
   } else {
     fetch(`/api/kpi-cancel/${ticket_id}`)
       .then(data => {
+        dataTicketFollowUp(ticket_id);
         return data.json();
       }).then(json => {
         $('#cancel_conserv_status').text(json.cancel_conserv_status)

@@ -8,6 +8,7 @@
   .then(data => {
     return data.json();
   }).then(json=>{
+    dataTicketFollowUp(ticket_id);
     $('#complain_desc').text(json.complain_desc)
     $('#reference_id').text(json.reference_id)
     $('#firstname').text(json.firstname)

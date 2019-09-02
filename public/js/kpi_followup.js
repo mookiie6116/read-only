@@ -24,7 +24,8 @@
         $('#problem_type').text(json.problem_type)
         $('#subproblem_type').text(json.subproblem_type)
         if(json.mass_problem){
-          $('#mass_problem').text(json.mass_problem)
+
+          $('#mass_problem').attr("checked","checked")
         }
         $('#call_times').text(json.call_times)
         
@@ -37,6 +38,7 @@
         $('#need_day').text(json.need_day)
         $('#need_hr').text(json.need_hr)
         $('#need_mi').text(json.need_mi)
+        $('#reminder_date').text(json.reminder_date)
         $('#reminder_time').text(json.reminder_time)
         $('#close_date').text(json.close_date)
         $('#problem_detail').text(json.problem_detail)

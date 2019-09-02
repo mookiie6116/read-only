@@ -8,6 +8,7 @@
       .then(data => {
         return data.json();
       }).then(json => {
+        dataTicketFollowUp(ticket_id);
         $('#cancel_conserv_status').text(json.cancel_conserv_status)
         $('#conserv_reason_1').text(json.conserv_reason_1)
         if(json.conserv_reason_2){
@@ -47,7 +48,6 @@
           $('#conserv_request_2_from').text(json.conserv_request_2_from)
           $('#conserv_request_2_to').text(json.conserv_request_2_to)
         }
-
 
       }).catch(err=>{
         console.log("not found 404");
