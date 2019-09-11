@@ -2,12 +2,13 @@ const express = require("express");
 const path = require('path')
 const cors = require('cors')
 const app = express();
+var db = require("./models/connectdb");
 const bodyParser = require("body-parser");
 //require the http module
 const http = require("http").Server(app);
 
-const port = process.env.PORT || 8989;
-
+const port = process.env.PORT || 9001;
+db.connect();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors());
